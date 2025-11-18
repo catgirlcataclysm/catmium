@@ -69,7 +69,8 @@ jobs:
       - name: set up environment
         run: |
           cd $GITHUB_WORKSPACE
-          # sudo sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
+          sudo sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
+          cat /etc/apt/sources.list
           sudo apt update
           sudo apt install -y libunwind-dev
           sudo apt build-dep linux
