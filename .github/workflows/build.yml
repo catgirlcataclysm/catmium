@@ -25,7 +25,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm64/config-debian config
-          sudo -E ./build-all arm64-debian.img 8G
+          sudo -E ./build-all arm64-debian.img 7G
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
@@ -55,7 +55,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm/config-debian config
-          sudo -E ./build-all arm32-debian.img 8G
+          sudo -E ./build-all arm32-debian.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -85,7 +85,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm64/config-arch config
-          sudo -E ./build-all arm64-arch.img 8G
+          sudo -E ./build-all arm64-arch.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -114,7 +114,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm/config-arch config
-          sudo -E ./build-all arm32-arch.img 8G
+          sudo -E ./build-all arm32-arch.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -143,7 +143,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm64/config-void config
-          sudo -E ./build-all arm64-void.img 8G
+          sudo -E ./build-all arm64-void.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -172,7 +172,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm/config-void config
-          sudo -E ./build-all arm32-void.img 8G
+          sudo -E ./build-all arm32-void.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -201,7 +201,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm64/config-void-musl config
-          sudo -E ./build-all arm64-void-musl.img 8G
+          sudo -E ./build-all arm64-void-musl.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -230,7 +230,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm/config-void-musl config
-          sudo -E ./build-all arm32-void-musl.img 8G
+          sudo -E ./build-all arm32-void-musl.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -259,7 +259,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm64/config-alpine config
-          sudo -E ./build-all arm64-alpine.img 8G
+          sudo -E ./build-all arm64-alpine.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -288,7 +288,7 @@ jobs:
         run: |
           ls
           cp cadmium-configs/arm/config-alpine config
-          sudo -E ./build-all arm32-alpine.img 8G
+          sudo -E ./build-all arm32-alpine.img 7G
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
